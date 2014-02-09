@@ -5,7 +5,6 @@ by Lukas Epple
 */
 
 #define COUNT_OF( arr) (sizeof(arr)/sizeof(0[arr]))
-const int FrameDelay = 10;
 
 #define UP_LEFT 2
 #define UP_MIDDLE 3
@@ -18,7 +17,7 @@ const int FrameDelay = 10;
 int Matrix[] = { UP_LEFT, UP_MIDDLE,UP_RIGHT,DOWN_LEFT,DOWN_MIDDLE,DOWN_RIGHT };
 
 
-int animation[][6] = { {UP_LEFT,DOWN_MIDDLE,UP_RIGHT}, {DOWN_LEFT,DOWN_RIGHT,UP_MIDDLE} };
+int animation[][6] = { {UP_LEFT}, {UP_MIDDLE},{UP_RIGHT},{DOWN_RIGHT},{DOWN_MIDDLE},{DOWN_LEFT} };
 
 void setup()
 {
@@ -35,7 +34,7 @@ void loop()
 		for(int j = 0; j < COUNT_OF(animation[i]); j++){
 			digitalWrite(animation[i][j], HIGH);
 		}
-		delay(1000);
+		delay(400);
 		for(int k = 0; k < COUNT_OF(animation[i]); k++){
 			digitalWrite(animation[i][k], LOW);
 		}
