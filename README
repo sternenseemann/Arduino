@@ -6,6 +6,7 @@ building
 --------
 I use ino <http://inotool.org/> with my Arduino. Therefore the folder structure doesn't work with the default Arduino IDE (but the IDE is able to fix it).
 Also I use the Arduino Ethernet, so you may configure your ino for that board.
-TODO
-----
-- Schaltpläne (Fritzing o.ä.)
+
+friting
+-------
+I added some files for fritzing <http://fritzing.org/download/>.
