@@ -1,3 +1,9 @@
+/*
+LEDMatrix
+Animating Code for a 6x2 LED Matrix
+by Lukas Epple
+*/
+
 #define COUNT_OF( arr) (sizeof(arr)/sizeof(0[arr]))
 const int FrameDelay = 10;
 
