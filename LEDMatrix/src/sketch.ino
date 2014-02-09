@@ -16,7 +16,7 @@ int animation[][6] = { {UP_LEFT,DOWN_MIDDLE,UP_RIGHT}, {DOWN_LEFT,DOWN_RIGHT,UP_
 
 void setup()
 {
-	for(int i = 0; i < sizeof(Matrix); i++){
+	for(int i = 0; i < COUNT_OF(Matrix); i++){
 		pinMode(Matrix[i], OUTPUT);
 	}
 	Serial.begin(9600);
